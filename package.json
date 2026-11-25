@@ -1,0 +1,42 @@
+{
+  "name": "monaco-json-studio-base-body",
+  "version": "1.0.0",
+  "description": "Handlebars-driven 1/2/3-pane body workspace templates and Monaco mount runtime.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshavsoft/monaco-json-studio-base-body.git"
+  },
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "monaco-json-studio-base-body": "./bin/index.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --check src/index.js && node --check src/v1/index.js && node --check bin/index.js"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.10"
+  },
+  "keywords": [
+    "monaco",
+    "body",
+    "handlebars",
+    "workspace",
+    "keshavsoft"
+  ],
+  "author": "KeshavSoft",
+  "license": "MIT"
+}
