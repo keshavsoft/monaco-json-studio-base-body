@@ -10,7 +10,7 @@
   <header class="site-header">
     <a class="brand" href="./index.html">
       <span>monaco-json-studio-base-body</span>
-      <span class="badge">Base · Body</span>
+      <span class="badge">Base · Body (v3)</span>
     </a>
     <nav class="nav">
       <a href="./index.html">Overview</a>
@@ -33,9 +33,9 @@
       <pre><code>npm install monaco-json-studio-base-body</code></pre>
       <pre><code>import { renderBody, generateBodyPreview, normalizeBodyConfig } from 'monaco-json-studio-base-body';
 
-const config = normalizeBodyConfig({ layout: 'double' });
+const config = normalizeBodyConfig({ layout: 'single', url: 'https://keshavsoft.github.io/declarative-spec/json/v3/spec.json' });
 const html = renderBody(config);</code></pre>
-      <p>Exports renderBody(), normalizeBodyConfig(), generateBodyPreview(), BODY_LAYOUTS, and assetsDir (css/body.css + js/monaco.js).</p>
+      <p>Exports renderBody(), normalizeBodyConfig(), generateBodyPreview(), BODY_LAYOUTS, and assetsDir (css/body.css + js/body + js/monaco).</p>
     </section>
   </main>
 

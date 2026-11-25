@@ -10,7 +10,7 @@
   <header class="site-header">
     <a class="brand" href="./index.html">
       <span>monaco-json-studio-base-body</span>
-      <span class="badge">Base · Body</span>
+      <span class="badge">Base · Body (v3)</span>
     </a>
     <nav class="nav">
       <a href="./index.html">Overview</a>
@@ -26,12 +26,12 @@
     
     <div class="hero">
       <h1>Why monaco-json-studio-base-body Exists</h1>
-      <p>Handlebars (.hbs) 1-, 2-, and 3-pane body layouts with the Monaco editor mounting runtime.</p>
+      <p>Handlebars (.hbs) 1-, 2-, and 3-pane body layouts paired with modular js/monaco/ runtime and source detection.</p>
     </div>
     <section>
       <h2>Design Story</h2>
       <p>Separating the body workspace from headers and footers lets a single page display 1, 2, or 3 editor panes under one shared header and footer.</p>
-      <p>All layout markup lives in <code>single.hbs</code>, <code>double.hbs</code>, <code>triple.hbs</code>, and <code>pane.hbs</code>. Starting in <code>v3</code>, Monaco logic lives separately under <code>assets/v3/js/monaco/</code> (<code>loader</code>, <code>source</code>, <code>mount</code>, <code>value</code>, <code>events</code>) with <code>loadInitialSource()</code> reporting whether data came from <code>local-data</code>, <code>same-origin</code>, <code>external</code>, or failed to load.</p>
+      <p>In v3, Monaco logic lives cleanly inside assets/v3/js/monaco/ (loader, source, mount, value, events, plus index.js orchestrator). loadInitialSource() detects local-data, same-origin, external URLs, and load failures, reporting metadata via onPaneSource().</p>
     </section>
   </main>
 

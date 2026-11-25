@@ -1,6 +1,6 @@
 # monaco-json-studio-base-body
 
-Handlebars (.hbs) 1-, 2-, and 3-pane body layouts with the Monaco editor mounting runtime.
+Handlebars (.hbs) 1-, 2-, and 3-pane body layouts paired with modular js/monaco/ runtime and source detection.
 
 - **npm**: [https://www.npmjs.com/package/monaco-json-studio-base-body](https://www.npmjs.com/package/monaco-json-studio-base-body)
 - **GitHub**: [https://github.com/keshavsoft/monaco-json-studio-base-body](https://github.com/keshavsoft/monaco-json-studio-base-body)
@@ -24,6 +24,6 @@ npm install monaco-json-studio-base-body
 ```js
 import { renderBody, generateBodyPreview, normalizeBodyConfig } from 'monaco-json-studio-base-body';
 
-const config = normalizeBodyConfig({ layout: 'double' });
+const config = normalizeBodyConfig({ layout: 'single', url: 'https://keshavsoft.github.io/declarative-spec/json/v3/spec.json' });
 const html = renderBody(config);
 ```
